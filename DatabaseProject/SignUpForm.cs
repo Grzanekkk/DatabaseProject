@@ -64,15 +64,15 @@ namespace DatabaseProject
 
         bool CheckEnteredValues()
         {
-            if (!DatabaseProject.ValidateDate.Username(username))
+            if (!ValidateDate.Username(username))
             {
                 MessageBox.Show("Please enter your name");
             }
-            else if(!DatabaseProject.ValidateDate.Email(email))
+            else if(!ValidateDate.Email(email))
             {
                 MessageBox.Show("Your email is incorrect");
             }
-            else if (!DatabaseProject.ValidateDate.Password(password))
+            else if (!ValidateDate.Password(password))
             {
                 MessageBox.Show("Your password is too short");
             }

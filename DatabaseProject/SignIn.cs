@@ -44,11 +44,11 @@ namespace DatabaseProject
 
         bool CheckEnteredValues()
         {
-            if(!DatabaseProject.ValidateDate.Email(email))
+            if(!ValidateDate.Email(email))
             {
                 MessageBox.Show("Your email is incorrect");
             }
-            else if(!DatabaseProject.ValidateDate.Password(password))
+            else if(!ValidateDate.Password(password))
             {
                 MessageBox.Show("Your password is too short");
             }
